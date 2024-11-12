@@ -1,0 +1,137 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0071e3;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #005bb5;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #1d1d1f;
+}
+
+section p {
+    font-size: 1.1em;
+    color: #6e6e73;
+}
+
+
+.project {
+    background-color: #f5f5f7;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.project h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.project h4, .project h5 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.project p {
+    color: #6e6e73;
+}
+
+
+.project-images {
+    display: flex;
+    overflow-x: scroll;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.project-images img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+
+.project-images::-webkit-scrollbar {
+    height: 8px;
+    background-color: #f5f5f7; /* Background of the scrollbar track */
+}
+
+.project-images::-webkit-scrollbar-thumb {
+    background-color: #53575b; /* Color of the scrollbar handle */
+    border-radius: 10px;
+    border: 2px solid #f5f5f7; /* Optional: Adds some padding around the handle */
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #6e6e73;
+}
