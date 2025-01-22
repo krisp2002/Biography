@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <title>Shpenzimet Mujore</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <!-- Forma per plotesimin e fushave, bashke me butonat qe therrasin funskionet e js ne klikim--> 
+<form id="form">
+    <label for="qera">Qera: </label> 
+    <input type="number" id="qera" name="qera" min="0"  required><br>
+
+    <label for="ushqim">Ushqim: </label> 
+    <input type="number" id="ushqim" name="ushqim" min="0" required><br>
+
+    <label for="transport">Transport: </label> 
+    <input type="number" id="transport" name="transport" min="0"  required><br>
+
+    <label for="tetjera">Te tjera: </label> 
+    <input type="number" id="tetjera" name="tetjera" min="0" required><br>
+    <button type="button" onclick="shtoShpenzime()">Shto Shpenzime</button>
+    <button type="button" onclick="pastro()">Pastro te Gjitha</button>
+</form>
+
+<!--Tabela ku do te behet shtimi i vlerave dhe llogaritja e totalit-->
+<table>
+    <thead>
+        <tr>
+            <th>LLoji i Shpenzimit</th>
+            <th>Shuma</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Qera</td>
+            <td id="qeraShuma">0</td>
+        </tr>
+        <tr>
+            <td>Ushqim</td>
+            <td id="ushqimShuma">0</td>
+        </tr>
+        <tr>
+            <td>Transport</td>
+            <td id="transportShuma">0</td>
+        </tr>
+        <tr>
+            <td>Te tjera</td>
+            <td id="tetjeraShuma">0</td>
+        </tr>
+        <tr>
+            <td>Totali</td>
+            <td id="totaliShuma">0</td>
+        </tr>
+    </tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
